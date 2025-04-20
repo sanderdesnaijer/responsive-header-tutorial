@@ -1,5 +1,7 @@
 🔗 **Live Demo**: [View on GitHub Pages](https://sanderdesnaijer.github.io/responsive-header-tutorial/)
 
+![Responsive navigation](docs/gif.gif)
+
 # Responsive Header Tutorial
 
 This project demonstrates how to build a responsive header/navigation bar using HTML, CSS, and a touch of JavaScript. It adapts gracefully between desktop and mobile screen sizes.
