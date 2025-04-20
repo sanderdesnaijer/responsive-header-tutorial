@@ -1,0 +1,142 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+/* Reset style */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+/* style */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  background-color:  #646cff;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 12px;
+}
+
+.logo-container {
+  background-color: #242424;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 8px;
+}
+
+.site-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #242424;
+}
+.site-nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0px 12px;
+}
+.site-nav li {
+  flex-grow: 1;
+}
+.site-nav a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 12px 0px 24px;
+}
+.site-nav img {
+  height: 40px;
+}
+
+.content {
+  padding: 48px 12px 110px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+
+/* sticky */
+.logo-container, .site-nav {
+  transform: translateY(0px);
+  transition: transform ease-in 0.3s;
+}
+
+
+.hide-menu .logo-container {
+  transform: translateY(-100%);
+}
+.hide-menu .site-nav {
+  transform: translateY(100%);
+}
+
+
+@media (min-width: 48rem) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .site-header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    background-color: #242424;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 12px;
+  }
+
+  .site-nav {  font-size: 1rem; }
+
+  .site-nav ul  { padding: 0px; }
+
+  .site-nav,
+  .logo-container {
+    position: static;
+    width: auto;
+  }
+
+  .site-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .site-nav img {
+    display: none;
+  }
+
+  .site-nav a {
+    padding: 4px 8px;
+  }
+
+  .content {
+    padding: 12px;
+  }
+
+  .logo-container, .site-nav {   
+    transition: none;
+  }
+}
