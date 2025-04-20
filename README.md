@@ -1,5 +1,9 @@
 🔗 **Live Demo**: [View on GitHub Pages](https://sanderdesnaijer.github.io/responsive-header-tutorial/)
 
+🔗 **CodeSandbox**: [View on CodeSandbox](https://codesandbox.io/p/sandbox/musing-spence-6gqtsj)
+
+🔗 **Medium Article**: [Read the tutorial on Medium](https://medium.com/p/5a244b280543)
+
 ![Responsive navigation](docs/gif.gif)
 
 # Responsive Header Tutorial
@@ -22,5 +26,4 @@ git clone https://github.com/sanderdesnaijer/responsive-header-tutorial.git
 cd responsive-header-tutorial
 npm ci
 npm run dev
-
 
